@@ -11,6 +11,12 @@ spring:
               - Path=/api/movies/**
             filters:
               - "StripPrefix=1"
+          - id: swagger
+            uri: lb://external-movie-service
+            predicates:
+              - Path=/swagger-ui.html, /v3/api-docs/**
+            filters:
+              - "StripPrefix=0"
 
 server:
   port: 8080
@@ -18,4 +24,4 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
