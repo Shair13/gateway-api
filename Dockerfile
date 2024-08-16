@@ -1,8 +1,8 @@
 FROM openjdk:17-alpine
 
 RUN apk update && apk upgrade && \
-apk add \
-maven
+    apk add \
+    maven
 
 RUN mkdir /code
 
