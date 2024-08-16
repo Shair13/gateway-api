@@ -19,4 +19,4 @@ EXPOSE 8080
 
 WORKDIR /opt/app
 
-CMD java -jar gateway-api-0.0.1-SNAPSHOT.jar
+CMD java -Xms150m -Xmx250m -jar gateway-api-0.0.1-SNAPSHOT.jar
