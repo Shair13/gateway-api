@@ -31,3 +31,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:30180/eureka/
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: movie-rest-api
+      client-secret: ${CLIENT_SECRET}
