@@ -36,4 +36,4 @@ springdoc:
   swagger-ui:
     oauth:
       client-id: movie-rest-api
-      client-secret: ${CLIENT_SECRET}
+      client-secret: mPEQY5rJaAmylsSuU6btHeqv5xrAUp3P
